@@ -1,0 +1,170 @@
+/* Reset and Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #ae9cff;
+    transition: background 0.3s ease;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(15, 13, 24, 0.2);
+    text-align: center;
+}
+
+.dark-mode body {
+    background: radial-gradient(circle at center, #4B0082, #2C003E);
+    color: #E6E6FA;
+}
+
+
+.dark-mode .container {
+    background-color: #2e2e2e;
+}
+
+/* Search Box */
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.search-box input {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #a592fd;
+    font-size: 16px;
+}
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #ae9cff;
+    border: none;
+    outline: none;
+    color: #292828;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-box button:hover {
+    background-color: #8a7ccf;
+}
+
+/* Loading Indicator */
+#loading {
+    display: none;
+    font-size: 18px;
+    color: #575a7b;
+}
+.hidden {
+    display: none;
+}
+
+/* Result Styling */
+.result {
+    position: relative;
+    text-align: left;
+}
+.result h3 {
+    font-size: 30px;
+    color: #1f194c;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.result button {
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.result button:hover {
+    color: #8a7ccf;
+}
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #b3b6d4;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #575a7b;
+}
+.word-example {
+    color: #575a7b;
+    font-style: italic;
+    border-left: 5px solid #ae9cff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(255, 4, 4, 0.829);
+}
+
+/* Dark Mode Toggle */
+.toggle-mode {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #1f194c;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+.dark-mode .container {
+    background-color: #2e2e2e;
+}
+.dark-mode .word h3,
+.dark-mode .word-meaning,
+.dark-mode .word-example {
+    color: #ffffff;
+}
+.dark-mode .details p {
+    color: #d3d3d3;
+}
+.dark-mode .error {
+    color: #ff6b6b;
+}
+.dark-mode .toggle-mode {
+    color: #ffffff;
+}
+
+
+button {
+    background: #C08497;
+    color: #FFFFFF;
+    border: 2px solid #FFD700;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #FFD700;
+    color: #2C003E;
+}
+
